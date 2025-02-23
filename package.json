@@ -39,7 +39,7 @@
     "build:native": "npm run clean && tsc --project tsconfig.prod.json",
     "clean": "npx rimraf tsconfig.tsbuildinfo ./dist",
     "app": "node dist/HomeServer.js",
-    "bapp": "node -r esm --enable-source-maps build/bundle.mjs",
+    "bapp": "node build/bundle/wmb.cjs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint src/**/*.ts --fix",

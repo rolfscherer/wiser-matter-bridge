@@ -41,12 +41,14 @@ export class WiserWsClient {
         }
       });
 
-      this.ws.on('error', (code: number) => {
+      this.ws.on('error', async (code: number) => {
         this.logger.error(`Error in websocket. Code: ${code}.`);
         this.ws = null;
         if (!this.close) {
           this.logger.info(`Reconnecting...`);
-          this.connect();
+          setTimeout(() => {
+            this.connect();
+          }, 1000);
         }
       });
 

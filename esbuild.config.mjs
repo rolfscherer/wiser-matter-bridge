@@ -9,6 +9,6 @@ build({
   sourcemap: true,
   minify: true,
   keepNames: true,
-  outfile: 'build/bundle/hs.cjs',
+  outfile: 'build/bundle/wmb.cjs',
   tsconfig: 'tsconfig.prod.json',
 }).catch(() => process.exit(1));
