@@ -1,0 +1,67 @@
+wiserNetwork:
+  ipAddress: '192.168.0.109'
+  # https://github.com/Feller-AG/wiser-tutorial/blob/main/doc/authentication.md
+  authToken: 'yourtoken'
+
+matterNetwork:
+  port: 5541
+  # Windows example
+  # type: 'Ethernet 2'
+  # Linux / Raspi example
+  # type: 'eth0'
+
+devices:
+  - id: 5
+    name: 'Küche'
+    type: 'DimmableLight'
+  - id: 6
+    name: 'Essen'
+    type: 'DimmableLight'
+  - id: 7
+    name: 'Balkon'
+    type: 'DimmableLight'
+  - id: 10
+    name: 'Sofa'
+    type: 'DimmableLight'
+  - id: 11
+    name: 'TV'
+    type: 'DimmableLight'
+  - id: 12
+    name: 'Flur'
+    type: 'DimmableLight'
+  - id: 13
+    name: 'Stehlampe'
+    type: 'Socket'
+  - id: 1
+    name: 'Rolladen Küche'
+    type: 'RollerShutterWithTilt'
+  - id: 2
+    name: 'Rolladen Essen'
+    type: 'RollerShutterWithTilt'
+  - id: 8
+    name: 'Rolladen Sofa'
+    type: 'RollerShutterWithTilt'
+  - id: 9
+    name: 'Rolladen TV'
+    type: 'RollerShutterWithTilt'
+  - id: 14
+    name: 'Rolladen Bad'
+    type: 'RollerShutterWithTilt'
+  - id: 15
+    name: 'Rolladen Büro gross'
+    type: 'RollerShutterWithTilt'
+  - id: 16
+    name: 'Rolladen Büro klein'
+    type: 'RollerShutterWithTilt'
+  - id: 18
+    name: 'Rolladen Schlafzimmer'
+    type: 'RollerShutterWithTilt'
+  - id: 39
+    name: 'Rolladen Gästezimmer'
+    type: 'RollerShutterWithTilt'
+  - id: 3
+    name: 'Sonnenschutz klein'
+    type: 'RollerShutter'
+  - id: 4
+    name: 'Sonnenschutz gross'
+    type: 'RollerShutter'

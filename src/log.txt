@@ -1,0 +1,59 @@
+2025-02-23 09:52:44.807 INFO HomeServer Home server started
+2025-02-23 09:52:44.850 INFO ServerNodeStore Opened *1739865195295* storage at C:\Users\rolf\AppData\Roaming\matter/wiser-bridge/1739865195295
+2025-02-23 09:52:44.852 INFO SessionManager restoring resumption record for node 4247088345 and peer node 4247088345 for fabric index 1
+2025-02-23 09:52:44.853 INFO SessionManager restoring resumption record for node 2829915803 and peer node 2829915803 for fabric index 1
+2025-02-23 09:52:44.891 INFO BaseEventStore Loaded volatile event store with next number 21001
+2025-02-23 09:52:44.895 INFO Endpoint *1739865195295* ready endpoint#: 0 type: RootNode (0x16) behaviors: 💤parts ✓index ✓basicInformation ✓accessControl ✓groupKeyManagement ✓generalCommissioning ✓administratorCommissioning ✓operationalCredentials ✓generalDiagnostics ✓commissioning ✓network 💤productDescription 💤sessions ✓events 💤controller ✓descriptor
+2025-02-23 09:52:44.899 INFO Endpoint *1739865195295.aggregator-1* ready endpoint#: 1 type: Aggregator (0xe) behaviors: 💤parts ✓index ✓descriptor
+2025-02-23 09:52:44.954 NOTICE Node *1739865195295* going online
+2025-02-23 09:52:44.986 INFO Endpoint *1739865195295.aggregator-1.wiser-5* ready endpoint#: 2 type: DimmableLight (0x101) behaviors: ✓identify ✓groups ✓onOff ✓levelControl ✓bridgedDeviceBasicInformation ✓descriptor
+2025-02-23 09:52:44.986 INFO Endpoint *1739865195295.aggregator-1.wiser-6* ready endpoint#: 3 type: DimmableLight (0x101) behaviors: ✓identify ✓groups ✓onOff ✓levelControl ✓bridgedDeviceBasicInformation ✓descriptor
+2025-02-23 09:52:44.987 INFO Endpoint *1739865195295.aggregator-1.wiser-7* ready endpoint#: 4 type: DimmableLight (0x101) behaviors: ✓identify ✓groups ✓onOff ✓levelControl ✓bridgedDeviceBasicInformation ✓descriptor
+2025-02-23 09:52:44.987 INFO Endpoint *1739865195295.aggregator-1.wiser-10* ready endpoint#: 5 type: DimmableLight (0x101) behaviors: ✓identify ✓groups ✓onOff ✓levelControl ✓bridgedDeviceBasicInformation ✓descriptor
+2025-02-23 09:52:44.987 INFO Endpoint *1739865195295.aggregator-1.wiser-11* ready endpoint#: 6 type: DimmableLight (0x101) behaviors: ✓identify ✓groups ✓onOff ✓levelControl ✓bridgedDeviceBasicInformation ✓descriptor
+2025-02-23 09:52:44.988 INFO Endpoint *1739865195295.aggregator-1.wiser-12* ready endpoint#: 7 type: DimmableLight (0x101) behaviors: ✓identify ✓groups ✓onOff ✓levelControl ✓bridgedDeviceBasicInformation ✓descriptor
+2025-02-23 09:52:44.988 INFO Endpoint *1739865195295.aggregator-1.wiser-13* ready endpoint#: 8 type: OnOffPlugInUnit (0x10a) behaviors: ✓identify ✓groups ✓onOff ✓bridgedDeviceBasicInformation ✓descriptor
+2025-02-23 09:52:44.998 INFO Endpoint *1739865195295.aggregator-1.wiser-9* ready endpoint#: 12 type: WindowCovering (0x202) behaviors: ✓identify ✓bridgedDeviceBasicInformation ✓windowCovering ✓descriptor
+2025-02-23 09:52:44.999 INFO Endpoint *1739865195295.aggregator-1.wiser-3* ready endpoint#: 18 type: WindowCovering (0x202) behaviors: ✓identify ✓bridgedDeviceBasicInformation ✓windowCovering ✓descriptor
+2025-02-23 09:52:44.999 INFO Endpoint *1739865195295.aggregator-1.wiser-4* ready endpoint#: 19 type: WindowCovering (0x202) behaviors: ✓identify ✓bridgedDeviceBasicInformation ✓windowCovering ✓descriptor
+2025-02-23 09:52:45.000 INFO Endpoint *1739865195295.aggregator-1.wiser-1* ready endpoint#: 9 type: WindowCovering (0x202) behaviors: ✓identify ✓bridgedDeviceBasicInformation ✓windowCovering ✓descriptor
+2025-02-23 09:52:45.000 INFO Endpoint *1739865195295.aggregator-1.wiser-2* ready endpoint#: 10 type: WindowCovering (0x202) behaviors: ✓identify ✓bridgedDeviceBasicInformation ✓windowCovering ✓descriptor
+2025-02-23 09:52:45.000 INFO Endpoint *1739865195295.aggregator-1.wiser-8* ready endpoint#: 11 type: WindowCovering (0x202) behaviors: ✓identify ✓bridgedDeviceBasicInformation ✓windowCovering ✓descriptor
+2025-02-23 09:52:45.001 INFO Endpoint *1739865195295.aggregator-1.wiser-14* ready endpoint#: 13 type: WindowCovering (0x202) behaviors: ✓identify ✓bridgedDeviceBasicInformation ✓windowCovering ✓descriptor
+2025-02-23 09:52:45.001 INFO Endpoint *1739865195295.aggregator-1.wiser-15* ready endpoint#: 14 type: WindowCovering (0x202) behaviors: ✓identify ✓bridgedDeviceBasicInformation ✓windowCovering ✓descriptor
+2025-02-23 09:52:45.001 INFO Endpoint *1739865195295.aggregator-1.wiser-16* ready endpoint#: 15 type: WindowCovering (0x202) behaviors: ✓identify ✓bridgedDeviceBasicInformation ✓windowCovering ✓descriptor
+2025-02-23 09:52:45.002 INFO Endpoint *1739865195295.aggregator-1.wiser-18* ready endpoint#: 16 type: WindowCovering (0x202) behaviors: ✓identify ✓bridgedDeviceBasicInformation ✓windowCovering ✓descriptor
+2025-02-23 09:52:45.002 INFO Endpoint *1739865195295.aggregator-1.wiser-39* ready endpoint#: 17 type: WindowCovering (0x202) behaviors: ✓identify ✓bridgedDeviceBasicInformation ✓windowCovering ✓descriptor
+2025-02-23 09:52:45.085 NOTICE Node *1739865195295* is online
+2025-02-23 09:52:45.088 INFO AccessControlServer initializing ACL manager with ACL { privilege: 5, authMode: 2, subjects: [ 18446744060824715265 ], targets: null, fabricIndex: 1 }
+2025-02-23 09:52:45.113 INFO HomeServer WiserBridge started
+2025-02-23 09:52:45.166 INFO WiserWsClient Websocket connection opened
+2025-02-23 09:52:46.415 INFO LoadsService Loads cache invalidated
+2025-02-23 09:52:47.737 INFO RollerShadeDeviceWithTilt ID:   1 RollerShadeDevice onLoadEvent: Level: 0 Tilt: 9
+2025-02-23 09:52:47.739 INFO DimmableLightDevice ID:  10 LightDeviceProxy onLoadEvent: Setting level to 0
+2025-02-23 09:52:47.741 INFO DimmableLightDevice ID:  11 LightDeviceProxy onLoadEvent: Setting level to 0
+2025-02-23 09:52:47.741 INFO DimmableLightDevice ID:  12 LightDeviceProxy onLoadEvent: Setting level to 0
+2025-02-23 09:52:47.742 INFO RollerShadeDeviceWithTilt ID:  14 RollerShadeDevice onLoadEvent: Level: 538 Tilt: 1
+2025-02-23 09:52:47.742 INFO RollerShadeDeviceWithTilt ID:  14 RollerShadeDevice onLoadEvent: Setting tilt to 1
+2025-02-23 09:52:47.742 INFO RollerShadeDeviceWithTilt ID:  15 RollerShadeDevice onLoadEvent: Level: 10000 Tilt: 7
+2025-02-23 09:52:47.742 INFO RollerShadeDeviceWithTilt ID:  15 RollerShadeDevice onLoadEvent: Setting tilt to 7
+2025-02-23 09:52:47.743 INFO RollerShadeDeviceWithTilt ID:  16 RollerShadeDevice onLoadEvent: Level: 9817 Tilt: 9
+2025-02-23 09:52:47.743 INFO RollerShadeDeviceWithTilt ID:  18 RollerShadeDevice onLoadEvent: Level: 0 Tilt: 9
+2025-02-23 09:52:47.743 INFO RollerShadeDeviceWithTilt ID:   2 RollerShadeDevice onLoadEvent: Level: 0 Tilt: 9
+2025-02-23 09:52:47.744 INFO RollerShadeDeviceWithTilt ID:   3 RollerShadeDevice onLoadEvent: Level: 0
+2025-02-23 09:52:47.744 INFO RollerShadeDeviceWithTilt ID:  39 RollerShadeDevice onLoadEvent: Level: 0 Tilt: 9
+2025-02-23 09:52:47.744 INFO RollerShadeDeviceWithTilt ID:   4 RollerShadeDevice onLoadEvent: Level: 0
+2025-02-23 09:52:47.744 INFO DimmableLightDevice ID:   5 LightDeviceProxy onLoadEvent: Setting level to 0
+2025-02-23 09:52:47.744 INFO DimmableLightDevice ID:   6 LightDeviceProxy onLoadEvent: Setting level to 0
+2025-02-23 09:52:47.745 INFO DimmableLightDevice ID:   7 LightDeviceProxy onLoadEvent: Setting level to 0
+2025-02-23 09:52:47.745 INFO RollerShadeDeviceWithTilt ID:   8 RollerShadeDevice onLoadEvent: Level: 0 Tilt: 9
+2025-02-23 09:52:47.745 INFO RollerShadeDeviceWithTilt ID:   9 RollerShadeDevice onLoadEvent: Level: 0 Tilt: 0
+2025-02-23 09:52:47.745 INFO LoadsService Loads cache refreshed
+2025-02-23 09:53:45.185 INFO CaseServer Received pairing request from udp://[fe80::6c4e:d33b:74b:b572%18]:5540
+2025-02-23 09:53:45.197 INFO CaseServer Session 21929 resumed with udp://[fe80::6c4e:d33b:74b:b572%18]:5540 for Fabric 00000000D3C60306(index 1) and PeerNode 00000000A8AD169B with CATs 65537
+2025-02-23 09:53:45.199 INFO InsecureSession End insecure session insecure/9119858133147404083
+2025-02-23 09:53:45.765 INFO InteractionServer Successfully created subscription 880634002 for Session 21929. Updates: 0 - 30 => 38 seconds (sendInterval = 30 seconds)
+2025-02-23 09:54:53.861 INFO WiserWsClient ID:  12 Load event received. Load Brightness: 10000
+2025-02-23 09:54:53.861 INFO DimmableLightDevice ID:  12 LightDeviceProxy onLoadEvent: Setting level to 254
+2025-02-23 09:55:04.767 INFO WiserWsClient ID:  12 Load event received. Load Brightness: 0
+2025-02-23 09:55:04.769 INFO DimmableLightDevice ID:  12 LightDeviceProxy onLoadEvent: Setting level to 0
