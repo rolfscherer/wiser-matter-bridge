@@ -1,12 +1,12 @@
 wiserNetwork:
   ipAddress: '192.168.0.109'
   # https://github.com/Feller-AG/wiser-tutorial/blob/main/doc/authentication.md
-  authToken: '6ce2e2b8-c49d-481b-9fa6-bb3cd3c58fc0'
+  authToken: 'auth-token'
 
 matterNetwork:
   port: 5541
   # Windows example
-  type: 'Ethernet 2'
+  # type: 'Ethernet 2'
   # Linux / Raspi example
   # type: 'eth0'
 

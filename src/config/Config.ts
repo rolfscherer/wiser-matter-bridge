@@ -47,8 +47,6 @@ export class Config {
       this._wiserWsUrl = `ws://${this.config.wiserNetwork.ipAddress}/api`;
       this._wiserAuthToken = this.config.wiserNetwork.authToken;
     }
-    axios.defaults.headers.common['Authorization'] = `Bearer ${this._wiserAuthToken}`;
-
   }
 
   public async loadFile(): Promise<void> {
