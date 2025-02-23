@@ -52,7 +52,7 @@ export class WiserRestClient {
 
   async patch<T>(url: string, data: T): Promise<ResponseWrapper<T>> {
     return axiosInstance
-      .post<ResponseWrapper<T>>(this.baseURL + url, JSON.stringify(data))
+      .patch<ResponseWrapper<T>>(this.baseURL + url, JSON.stringify(data))
       .then(response => this.processResponse(response))
       .catch(error => this.processError(error));
   }
