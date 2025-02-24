@@ -11,6 +11,9 @@ matterNetwork:
   # type: 'eth0'
 
 devices:
+#  - id: Wiser-Id
+#    name: Name of the device. Important for the voice control
+#    type: Type of the device. Possible values: Light, DimmableLight, Socket, RollerShutter, RollerShutterWithTilt
   - id: 5
     name: 'Küche'
     type: 'DimmableLight'
