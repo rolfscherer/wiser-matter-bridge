@@ -13,8 +13,24 @@ export class WiserWsClient {
   allEventsListeners: OnLoadEventHandler[] = [];
   listeners: Map<number, OnLoadEventHandler> = new Map();
   close = false;
+  pingTimeout: NodeJS.Timeout | null = null;
 
   constructor(@inject(Config) public readonly config: Config) {}
+
+  private heartbeat(): void {
+    if(this.pingTimeout) {
+      clearTimeout(this.pingTimeout);
+    }
+
+    // The ping comes every 30 seconds. If there is no ping after 31 seconds, we establish a new connection.
+    this.pingTimeout = setTimeout(() => {
+      if(this.ws) {
+        this.ws.terminate();
+        this.ws = null;
+      }
+      this.connect();
+    }, 30000 + 1000);
+  }
 
   public connect(): void {
     if (this.ws) {
@@ -31,6 +47,12 @@ export class WiserWsClient {
     if (this.ws) {
       this.ws.on('open', () => {
         this.logger.info('Websocket connection opened');
+        this.heartbeat();
+      });
+
+      this.ws.on('ping', () => {
+        this.logger.debug('Ping received');
+        this.heartbeat();
       });
 
       this.ws.on('close', (code: number) => {
