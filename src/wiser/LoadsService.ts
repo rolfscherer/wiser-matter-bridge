@@ -1,10 +1,18 @@
 import { Logger } from '@matter/main';
 import { Mutex } from 'async-mutex';
 import { inject, injectable } from 'inversify';
-import { Bri, Motor } from '../web_server/controllers/LoadsController.js';
 import type { Load, TargetState } from './models/Load.js';
 import { ResponseWrapper, WiserRestClient } from './WiserRestClient.js';
 import { OnLoadEventHandler, WiserWsClient } from './WiserWsClient.js';
+
+export interface Bri {
+  bri: number;
+}
+
+export interface Motor {
+  level?: number;
+  tilt?: number;
+}
 
 @injectable()
 export class LoadsService {

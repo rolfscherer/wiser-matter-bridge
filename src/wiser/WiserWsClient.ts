@@ -25,11 +25,12 @@ export class WiserWsClient {
     // The ping comes every 30 seconds. If there is no ping after 31 seconds, we establish a new connection.
     this.pingTimeout = setTimeout(() => {
       if(this.ws) {
+        this.logger.warn('Ping not received within 31 seconds. Reestablishing connection.');
         this.ws.terminate();
         this.ws = null;
       }
       this.connect();
-    }, 30000 + 1000);
+    }, 31000); // 30 seconds + 1 second
   }
 
   public connect(): void {
@@ -38,7 +39,7 @@ export class WiserWsClient {
     }
 
     if (!this.config.wiserWsUrl) {
-      console.warn('Websocket url not available');
+      this.logger.warn('Websocket url not available');
       return;
     }
 
@@ -58,16 +59,24 @@ export class WiserWsClient {
       this.ws.on('close', (code: number) => {
         this.logger.info(`Websocket connection closed. Code: ${code}`);
         this.ws = null;
+        if(this.pingTimeout) {
+          clearTimeout(this.pingTimeout);
+          this.pingTimeout = null;
+        }
         if (!this.close) {
           this.connect();
         }
       });
 
-      this.ws.on('error', async (code: number) => {
-        this.logger.error(`Error in websocket. Code: ${code}.`);
+      this.ws.on('error', (error: Error) => {
+        this.logger.error(`Error in websocket: ${error.message}`);
         this.ws = null;
+        if(this.pingTimeout) {
+          clearTimeout(this.pingTimeout);
+          this.pingTimeout = null;
+        }
         if (!this.close) {
-          this.logger.info(`Reconnecting...`);
+          this.logger.info('Reconnecting...');
           setTimeout(() => {
             this.connect();
           }, 1000);
